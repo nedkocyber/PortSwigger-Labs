@@ -1,3 +1,5 @@
+# Lab1: File path traversal, simple case
+
 The first lab is preaty straith forward we capture the web request with burp suite to exploit it
 
 <img width="1290" height="661" alt="image" src="https://github.com/user-attachments/assets/5e6d7c24-ef93-4a95-9ca5-bad8a43c6ba4" />
