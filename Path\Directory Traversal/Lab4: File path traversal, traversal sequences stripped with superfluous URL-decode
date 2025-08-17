@@ -1,5 +1,10 @@
 # Lab4: File path traversal, traversal sequences stripped with superfluous URL-decode
 
+We try a standard path traversal payload
+
+
+
+The request is blocked, as the application detects ../ sequences.
 
 
 
