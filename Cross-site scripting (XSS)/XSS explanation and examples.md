@@ -19,7 +19,7 @@ If a comment or profile bio is saved to the database and later rendered without 
 ### DOM-based XSS
 Client JS reads location.hash or location.search and inserts it into the page with innerHTML / document.write. Visiting:
 
-https://example.com/#<img src=x onerror=alert(1)>
+`https://example.com/#<img src=x onerror=alert(1)>`
 
 
 can cause the injected fragment to execute if the page writes the hash into the DOM unsafely.
