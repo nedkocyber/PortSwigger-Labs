@@ -25,3 +25,4 @@ That’s NoSQL Injection — tricking a NoSQL database into doing something dang
 | Common Targets   | MySQL, PostgreSQL, MSSQL                | MongoDB, CouchDB, Firebase, etc.             |
 | Typical Exploits | Dump data, bypass login, modify records | Same goals, but different syntax             |
 
+
