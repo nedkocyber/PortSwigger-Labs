@@ -1,5 +1,5 @@
 
-Payload: <script>alert(1)</script>
+Payload: `<script>alert(1)</script>`
 
 What it demonstrates: This is a minimal, safe proof-of-concept payload used to show that arbitrary JavaScript can execute in the victim’s browser context. alert(1) only displays a dialog and causes no harm — it is used purely as an indicator that the injection was successful.
 
