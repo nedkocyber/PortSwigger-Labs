@@ -8,7 +8,7 @@ XSS is a client-side web vulnerability where an application includes untrusted d
 ### Reflected XSS (simple)
 If a search page reflects a parameter directly into HTML, a payload like:
 
-<script>alert(1)</script>
+`<script>alert(1)</script>`
 
 
 reflected in the response will execute in the visitor’s browser when they open the crafted link.
@@ -27,7 +27,7 @@ can cause the injected fragment to execute if the page writes the hash into the 
 Attribute / URL context
 When user input becomes an attribute value (e.g. href), attackers may use javascript: or event handlers to trigger code on click:
 
-<a href="javascript:alert(1)">click me</a>
+`<a href="javascript:alert(1)">click me</a>`
 
 
 (Use simple alert(1) payloads during learning to confirm execution without harmful side effects.)
