@@ -8,15 +8,15 @@ SQL Injection is a vulnerability that occurs when an application embeds untruste
 Auth bypass (simple)
 Vulnerable pseudo-code:
 
-query = "SELECT * FROM users WHERE username = '" + user + "' AND password = '" + pass + "'";
+`query = "SELECT * FROM users WHERE username = '" + user + "' AND password = '" + pass + "'";`
 
 
-If user = ' OR '1'='1 → condition becomes always true and the attacker may log in.
+If user =` ' OR '1'='1` → condition becomes always true and the attacker may log in.
 
 ### Data leak (union)
 Attacker appends a UNION to return other data:
 
-' UNION SELECT null, version(), null -- 
+`' UNION SELECT null, version(), null -- `
 
 
 This can expose DB info or other rows.
@@ -24,12 +24,12 @@ This can expose DB info or other rows.
 ### Modify data (UPDATE/DELETE/INSERT)
 If the app executes multiple statements or concatenates input into an executable query, an attacker can change records:
 
-'; UPDATE users SET is_admin = 1 WHERE username = 'alice'; --
+`'; UPDATE users SET is_admin = 1 WHERE username = 'alice'; --`
 
 
 Or delete data:
 
-'; DELETE FROM orders WHERE id = 1; --
+`'; DELETE FROM orders WHERE id = 1; --`
 
 
 These payloads inject SQL that updates or removes rows, demonstrating how SQLi can lead to direct data modification (not only reading).
