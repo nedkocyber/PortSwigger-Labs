@@ -1,4 +1,4 @@
-# Lab: 2FA simple bypass
+# Lab2: 2FA simple bypass
 
 We begin by logging in with the provided credentials for the victim:
 
