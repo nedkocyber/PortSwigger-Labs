@@ -1,4 +1,4 @@
-# SQL Injection — Super Short Intro
+# SQL Injection
 
 ## What is SQL Injection (SQLi)?
 SQL Injection is a vulnerability that occurs when an application embeds untrusted user input directly into an SQL statement. It can happen anywhere user-supplied data is used to build queries (URL parameters, form fields, headers, cookies). By manipulating that input, an attacker can change the intended SQL logic to read, insert, update or delete data, execute multiple statements, or escalate an attack to full system compromise if the database account has high privileges. Common vectors include concatenated strings, dynamic queries, and insufficient input handling.
